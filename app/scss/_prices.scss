@@ -1,0 +1,11 @@
+.prices {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px){
+  .prices {
+    padding: 100px 0;
+  }
+}

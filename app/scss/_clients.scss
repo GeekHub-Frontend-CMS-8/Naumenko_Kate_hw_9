@@ -1,0 +1,30 @@
+.clients {
+  padding: 60px 0 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 360px) {
+  .clients {
+    padding-bottom: 360px;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .clients {
+    padding-bottom: 330px;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+    .clients {
+      padding-bottom: 300px;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+  .clients {
+    padding-top: 100px;
+  }
+}

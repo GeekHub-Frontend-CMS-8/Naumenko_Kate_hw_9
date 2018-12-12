@@ -1,0 +1,12 @@
+.services {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  background-color: $primary-bg-color;
+}
+
+@media only screen and (min-width: 768px) {
+  .services {
+    padding: 100px 0;
+  }
+}

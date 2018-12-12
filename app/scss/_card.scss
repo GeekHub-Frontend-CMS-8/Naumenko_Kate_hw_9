@@ -1,0 +1,88 @@
+.card {
+  max-width: 385px;
+  min-height: 450px;
+  border: 1px solid #eeeeee;
+  color: #485563;
+
+  &__header {
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  &__title {
+    font: 20px/1.75 $primary-font;
+  }
+
+  &__price {
+    font: 45px $secondary-font;
+  }
+
+  &__term {
+    font: $secondary-font-size $fourth-seniority-font;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__container-description {
+    width: 80%;
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    font: #{$secondary-font-size}/3 $tertiary-font;
+  }
+
+  &__container-button {
+    padding-bottom: 50px;
+  }
+
+  &__container-button:nth-child(2),
+  &__container-button:nth-child(3){
+    padding-top: 30px;
+  }
+
+
+  &__button {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0 0 35px 10px #485563;
+      transition: .5s ease;
+    }
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .card {
+    &__container-description {
+      width: 65%;
+    }
+
+    &__container-button:nth-child(1),
+    &__container-button:nth-child(3){
+      padding-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card__container-description {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .card__container-description {
+    width: 65%;
+  }
+}

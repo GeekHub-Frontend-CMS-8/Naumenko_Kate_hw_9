@@ -1,0 +1,141 @@
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 70%;
+  overflow: hidden;
+
+  &__items,
+  &__labels {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+  }
+
+  &__items {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: left .5s ease-out;
+  }
+
+  &__labels {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  &__item {
+    display: block;
+    float: left;
+    width: 33.33333333%;
+    height: 100%;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  &__testimonial {
+    color: $primary-color;
+    font: #{$tertiary-font-size}/1.5 $tertiary-font;
+  }
+
+  &__selector {
+    display: none;
+  }
+
+  &__label {
+    display: inline-block;
+    border: 1px solid $primary-color;
+    border-radius: 50%
+  }
+
+  &__label label {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__quote {
+    padding: 35px 0 25px;
+    display: block;
+    color: #959ba2;
+    font: italic 35px/.5 $primary-font;
+  }
+}
+
+#slide-1:checked ~ .carousel__items {
+  left: 0;
+}
+
+#slide-1:checked ~ .carousel__labels .carousel__label:nth-child(1) label {
+  background-color: $primary-color;
+}
+
+#slide-2:checked ~ .carousel__items {
+  left: -100%;
+}
+#slide-2:checked ~ .carousel__labels .carousel__label:nth-child(2) label {
+  background-color: $primary-color;
+}
+
+#slide-3:checked ~ .carousel-items {
+  left: -200%;
+}
+
+#slide-3:checked ~ .carousel__labels .carousel__label:nth-child(3) label {
+  background-color: $primary-color;
+}
+
+@media only screen and (min-width: 360px) {
+  .carousel {
+    padding-bottom: 55%;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .carousel {
+    padding-bottom: 40%;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .carousel {
+    padding-bottom: 27%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .carousel {
+    padding-bottom: 22%;
+  }
+}
+
+@media only screen and (min-width: 731px) {
+  .carousel {
+    padding-bottom: 18%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel {
+    padding-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .carousel {
+    padding-bottom: 10%;
+  }
+}

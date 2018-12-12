@@ -1,0 +1,82 @@
+.list-input {
+  max-width: 410px;
+  width: 100%;
+  min-height: 425px;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: $secondary-color;
+  font: #{$primary-font-size}/3 $secondary-font;
+
+  &:nth-last-child(1) {
+    align-items: flex-end;
+  }
+
+  &__item {
+    max-width: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__field,
+  &__message,
+  &__submit {
+    max-width: 200px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #bdbbbc;
+    border-radius: 2px;
+  }
+
+  &__field {
+    height: 45px;
+  }
+
+  &__message {
+    resize: none;
+  }
+
+  &__submit {
+    padding: 15px 35px;
+    color: $secondary-color;
+    font: $primary-font-size $secondary-font;
+
+    &:hover {
+      box-shadow: 0 0 35px 10px $tertiary-color;
+      transition: .5s ease;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .list-input {
+
+    &__field,
+    &__message,
+    &__submit {
+      max-width: 230px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .list-input {
+
+    &__field,
+    &__message,
+    &__submit {
+      max-width: 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .list-input {
+    padding: 0;
+  }
+}

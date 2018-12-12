@@ -1,0 +1,10 @@
+.text {
+  padding-bottom: 40px;
+  font: #{$secondary-font-size}/1.5 $tertiary-font;
+}
+
+@media only screen and (min-width: 768px) {
+  .text {
+   padding-bottom: 0;
+  }
+}

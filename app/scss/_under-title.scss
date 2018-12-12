@@ -1,0 +1,27 @@
+.under-title {
+  padding-bottom: 40px;
+  font: #{$secondary-font-size}/2 $tertiary-font;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    bottom: 0;
+    top: 60%;
+    left: 45%;
+    border-bottom: 2px solid $primary-color;
+    content: "";
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .under-title{
+    padding-bottom: 75px;
+
+    &:before {
+      top: 40%;
+      left: 48%;
+    }
+  }
+}

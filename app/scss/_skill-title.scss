@@ -1,0 +1,10 @@
+.skill-title {
+  padding: 25px 0;
+  font: $tertiary-font-size $primary-font;
+}
+
+@media only screen and (min-width: 768px) {
+  .skill-title {
+    padding-top: 40px;
+  }
+}

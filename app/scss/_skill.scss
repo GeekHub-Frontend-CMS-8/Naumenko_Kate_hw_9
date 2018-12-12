@@ -1,0 +1,13 @@
+.skill {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .skill {
+    max-width: 265px;
+    padding-top: 60px;
+  }
+}

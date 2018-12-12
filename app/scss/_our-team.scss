@@ -1,0 +1,27 @@
+.our-team {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+                  rgba(41, 50, 60, 0.5),
+                  rgba(41, 50, 60, 0.5)
+  ), url("../img/team-bg.png") center;
+  background-size: cover;
+
+  &__row {
+    max-width: 1200px;
+  }
+
+  &__title,
+  &__under-title {
+    color: $tertiary-color;
+  }
+
+  &__under-title:before {
+    border-color: $tertiary-color;
+  }
+
+  &__container {
+    height: auto;
+  }
+}

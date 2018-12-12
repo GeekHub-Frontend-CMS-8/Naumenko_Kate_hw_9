@@ -1,0 +1,35 @@
+.site-navigation__main-menu,
+.site-navigation > input {
+  position: absolute;
+  display: none;
+}
+
+.site-navigation > label {
+  padding: 0;
+  display: flex;
+  color: $secondary-color;
+  cursor: pointer;
+  font: $secondary-font-size $secondary-font;
+  user-select: none;
+}
+
+.site-navigation > input:checked + .site-navigation__main-menu {
+  background-color: $primary-color;
+  display: block;
+
+}
+
+.site-navigation {
+  display: block;
+
+  &__menu-item {
+    padding: 12px 10px;
+    display: block;
+    font: 18px $secondary-font;
+  }
+
+  &__icon {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+}
